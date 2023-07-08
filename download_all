@@ -1,0 +1,9 @@
+#!/bin/bash
+
+versions="2.23 2.27 2.31 2.35"
+
+for version in ${versions}
+do
+    wget "https://launchpad.net/ubuntu/+archive/primary/+files/glibc_${version}.orig.tar.xz"
+    tar xf "./glibc_${version}.orig.tar.xz"
+done
